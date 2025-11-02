@@ -91,7 +91,7 @@ const AdvancedPortfolio = () => {
       id: 1, 
       title: 'Full Stack Programming', 
       issuer: 'Tectigon Academy', 
-      date: '2023', 
+      date: '2025', 
       icon: <FaCode />,
       details: {
         description: 'Comprehensive full-stack development program covering modern web technologies and freelance skills.',
@@ -104,7 +104,7 @@ const AdvancedPortfolio = () => {
       id: 2, 
       title: 'International Summer Academy of Advanced IoT', 
       issuer: 'UBT', 
-      date: '2023', 
+      date: '2025', 
       icon: <FaAws />,
       details: {
         description: 'Advanced training in IoT technologies, cloud solutions and scalable development methodologies.',
@@ -117,7 +117,7 @@ const AdvancedPortfolio = () => {
       id: 3, 
       title: 'DevOps Specialist', 
       issuer: 'Digital School', 
-      date: '2023', 
+      date: '2025', 
       icon: <FaDatabase />,
       details: {
         description: 'Specialized DevOps training focusing on modern infrastructure and automation practices.',
@@ -130,7 +130,7 @@ const AdvancedPortfolio = () => {
       id: 4, 
       title: 'Web Development', 
       issuer: 'Sololearn', 
-      date: '2022', 
+      date: '2023', 
       icon: <FaCode />,
       details: {
         description: 'Fundamental web development certification covering core frontend technologies.',
@@ -143,7 +143,7 @@ const AdvancedPortfolio = () => {
       id: 5, 
       title: 'Responsive Web Design', 
       issuer: 'freeCodeCamp', 
-      date: '2022', 
+      date: '2023', 
       icon: <FaFigma />,
       details: {
         description: 'Certification in creating responsive and accessible web designs.',
@@ -156,7 +156,7 @@ const AdvancedPortfolio = () => {
       id: 6, 
       title: 'React Native', 
       issuer: 'Digital School', 
-      date: '2023', 
+      date: '2024', 
       icon: <FaReact />,
       details: {
         description: 'Mobile app development certification using React Native framework.',
@@ -220,18 +220,18 @@ const AdvancedPortfolio = () => {
   ];
 
   
-  
+
 
   // Updated skills with all your technologies
   const skills = [
-    { name: 'React/Next.js', level: 90, icon: <FaReact />, color: '#61DAFB' },
-    { name: 'UI/UX Design', level: 85, icon: <FaFigma />, color: '#F24E1E' },
-    { name: 'HTML/CSS/JS', level: 95, icon: <FaCode />, color: '#F7DF1E' },
-    { name: 'PHP & MySQL', level: 88, icon: <FaDatabase />, color: '#777BB4' },
-    { name: 'Java', level: 82, icon: <FaCode />, color: '#ED8B00' },
-    { name: 'React Native', level: 80, icon: <FaReact />, color: '#61DAFB' },
-    { name: 'Linux/Git', level: 85, icon: <FaCode />, color: '#F05032' },
-    { name: 'WordPress', level: 78, icon: <FaCode />, color: '#21759B' }
+    { name: 'React/Next.js', level: 90, icon: <FaReact />, color: '#764ba2' },
+    { name: 'UI/UX Design', level: 85, icon: <FaFigma />, color: '#764ba2' },
+    { name: 'HTML/CSS/JS', level: 95, icon: <FaCode />, color: '#764ba2' },
+    { name: 'PHP & MySQL', level: 88, icon: <FaDatabase />, color: '#764ba2' },
+    { name: 'Java', level: 82, icon: <FaCode />, color: '#764ba2' },
+    { name: 'React Native', level: 80, icon: <FaReact />, color: '#764ba2' },
+    { name: 'Linux/Git', level: 85, icon: <FaCode />, color: '#764ba2' },
+    { name: 'WordPress', level: 78, icon: <FaCode />, color: '#764ba2' }
   ];
 
   const experiences = [
@@ -296,7 +296,7 @@ const AdvancedPortfolio = () => {
       video: null,
       github: 'https://github.com/username/healthqueue',
       liveDemo: '#',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Socket.io'],
+      technologies: ['React', 'Node.js', 'MySQL', 'Express'],
       features: ['Real-time Queue Management', 'Patient Tracking', 'Appointment Scheduling', 'Medical Analytics']
     },
     {
@@ -308,7 +308,7 @@ const AdvancedPortfolio = () => {
       video: null,
       github: 'https://github.com/username/smis',
       liveDemo: '#',
-      technologies: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap'],
+      technologies: ['React JS', '.NET CORE', 'MSSQL', 'BOOTSTRAP'],
       features: ['Student Records', 'Grade Management', 'Attendance Tracking', 'Report Generation']
     },
     {
@@ -320,7 +320,7 @@ const AdvancedPortfolio = () => {
       video: null,
       github: 'https://github.com/username/expenses-tracker',
       liveDemo: '#',
-      technologies: ['React Native', 'Firebase', 'Chart.js', 'Redux'],
+      technologies: ['HTML/CSS/JS', 'PHP&MySQL'],
       features: ['Expense Tracking', 'Budget Planning', 'Financial Reports', 'Multi-platform Support']
     }
   ];
@@ -558,7 +558,7 @@ const AdvancedPortfolio = () => {
                   marginBottom: '1.5rem'
                 }}>
                   Creating <span style={{ 
-                    background: 'linear-gradient(45deg, #FFFFFF, #F0C4D8)',
+                    background: 'linear-gradient(45deg, #FFFFFF, #FFFFFF)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent'
                   }}>Digital</span> Experiences
@@ -1857,149 +1857,272 @@ const AdvancedPortfolio = () => {
         </Container>
       </footer>
 
-      {/* Project Modal */}
-      <AnimatePresence>
-        {showProjectModal && (
-          <Modal 
-            show={showProjectModal} 
-            onHide={() => setShowProjectModal(false)} 
-            size="lg" 
-            centered
-            style={{ backdropFilter: 'blur(10px)' }}
+  {/* Professional Project Modal */}
+<AnimatePresence>
+  {showProjectModal && (
+    <Modal 
+      show={showProjectModal} 
+      onHide={() => setShowProjectModal(false)} 
+      size="xl" 
+      centered
+      className="border-0"
+      style={{ backdropFilter: 'blur(10px)' }}
+    >
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.9 }}
+        transition={{ duration: 0.2, ease: "easeOut" }}
+        className="position-relative"
+      >
+        {/* Header */}
+        <div style={{
+          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          color: 'white',
+          padding: '2rem 2rem 1.5rem',
+          borderTopLeftRadius: '12px',
+          borderTopRightRadius: '12px',
+          position: 'relative'
+        }}>
+          {/* Close Button */}
+          <motion.button
+            whileHover={{ scale: 1.1, rotate: 90 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => setShowProjectModal(false)}
+            style={{
+              position: 'absolute',
+              top: '1rem',
+              right: '1rem',
+              background: 'rgba(255,255,255,0.2)',
+              border: 'none',
+              borderRadius: '50%',
+              width: '40px',
+              height: '40px',
+              color: 'white',
+              fontSize: '1.2rem',
+              cursor: 'pointer',
+              backdropFilter: 'blur(10px)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
           >
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.5 }} 
-              animate={{ opacity: 1, scale: 1 }} 
-              exit={{ opacity: 0, scale: 0.5 }} 
-              transition={{ type: 'spring', stiffness: 200 }}
+            ×
+          </motion.button>
+
+          <div className="text-center">
+            <motion.h4 
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              className="fw-bold mb-2"
+              style={{ fontSize: '1.5rem' }}
             >
-              <Modal.Header 
-                closeButton 
-                style={{ 
-                  background: theme === 'light' ? '#667eea' : '#4A5568', 
-                  color: '#FFFFFF', 
-                  borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-                  borderRadius: '15px 15px 0 0'
-                }}
-              >
-                <Modal.Title style={{ fontWeight: '700' }}>
-                  {selectedProject?.title} Details
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body style={{ 
-                background: theme === 'light' ? '#FFFFFF' : '#2D3748', 
-                color: theme === 'light' ? '#2D3748' : '#F7FAFC',
-                borderRadius: '0 0 15px 15px'
+              {selectedProject?.title}
+            </motion.h4>
+            <motion.div
+              initial={{ y: -10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="d-flex justify-content-center align-items-center gap-3 flex-wrap"
+            >
+              <span className="badge bg-light text-dark px-3 py-2">
+                {selectedProject?.technologies[0]}
+              </span>
+              <span className="text-white-80" style={{ fontSize: '0.9rem' }}>
+                Full Stack Application
+              </span>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Body */}
+        <div style={{
+          background: theme === 'light' ? '#FFFFFF' : '#1A202C',
+          color: theme === 'light' ? '#2D3748' : '#F7FAFC',
+          padding: '0',
+          borderBottomLeftRadius: '12px',
+          borderBottomRightRadius: '12px'
+        }}>
+          {/* Project Image */}
+          <div style={{
+            height: '200px',
+            background: theme === 'light' ? '#F7FAFC' : '#2D3748',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            position: 'relative',
+            overflow: 'hidden'
+          }}>
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              style={{
+                fontSize: '3rem',
+                color: theme === 'light' ? '#667eea' : '#A0AEC0'
+              }}
+            >
+              {selectedProject?.title === 'UBT High School SMIS' ? '🏫' :
+               selectedProject?.title === 'HealthQueue Kosova' ? '🏥' : '💼'}
+            </motion.div>
+          </div>
+
+          {/* Content */}
+          <div className="p-4">
+            {/* Description */}
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              className="mb-4"
+            >
+              <h6 className="fw-semibold mb-3" style={{ 
+                color: theme === 'light' ? '#667eea' : '#A0AEC0',
+                fontSize: '1rem'
               }}>
-                <Carousel style={{ marginBottom: '2rem' }}>
-                  {selectedProject?.images.map((img, i) => (
-                    <Carousel.Item key={i}>
-                      <img 
-                        className="d-block w-100" 
-                        src={img} 
-                        alt={`Project slide ${i}`} 
-                        style={{ 
-                          height: '300px', 
-                          objectFit: 'cover', 
-                          borderRadius: '10px' 
-                        }} 
-                      />
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
-                {selectedProject?.video && (
-                  <div style={{ marginBottom: '2rem' }}>
-                    <iframe 
-                      width="100%" 
-                      height="300" 
-                      src={selectedProject.video} 
-                      title="Project Video" 
-                      frameBorder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                      allowFullScreen
-                      style={{ borderRadius: '10px' }}
-                    ></iframe>
-                  </div>
-                )}
-                <p style={{ 
-                  lineHeight: '1.6', 
-                  marginBottom: '2rem',
-                  color: theme === 'light' ? '#4A5568' : '#CBD5E0'
-                }}>
-                  {selectedProject?.detailedDescription}
-                </p>
-                
-                <div className="mb-3">
-                  <strong style={{ color: theme === 'light' ? '#2D3748' : '#F7FAFC' }}>
-                    Technologies Used:
-                  </strong>
-                  <div className="mt-2">
+                Project Overview
+              </h6>
+              <p style={{ 
+                lineHeight: '1.6',
+                color: theme === 'light' ? '#4A5568' : '#CBD5E0',
+                fontSize: '0.95rem'
+              }}>
+                {selectedProject?.detailedDescription}
+              </p>
+            </motion.div>
+
+            <div className="row g-4">
+              {/* Technologies */}
+              <div className="col-md-6">
+                <motion.div
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.5 }}
+                >
+                  <h6 className="fw-semibold mb-3" style={{ 
+                    color: theme === 'light' ? '#667eea' : '#A0AEC0',
+                    fontSize: '1rem'
+                  }}>
+                    Technology Stack
+                  </h6>
+                  <div className="d-flex flex-wrap gap-2">
                     {selectedProject?.technologies.map((tech, i) => (
-                      <Badge 
-                        key={i} 
-                        className="me-1 mb-1" 
-                        style={{ 
-                          background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                          color: '#FFFFFF',
-                          padding: '8px 12px',
-                          borderRadius: '20px',
-                          fontSize: '0.8rem'
+                      <motion.span
+                        key={i}
+                        initial={{ scale: 0, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ delay: 0.6 + i * 0.1 }}
+                        whileHover={{ scale: 1.05 }}
+                        className="badge px-3 py-2"
+                        style={{
+                          background: theme === 'light' 
+                            ? 'rgba(102, 126, 234, 0.1)' 
+                            : 'rgba(160, 174, 192, 0.1)',
+                          color: theme === 'light' ? '#667eea' : '#A0AEC0',
+                          border: `1px solid ${theme === 'light' ? 'rgba(102, 126, 234, 0.2)' : 'rgba(160, 174, 192, 0.2)'}`,
+                          fontSize: '0.8rem',
+                          fontWeight: '500'
                         }}
                       >
                         {tech}
-                      </Badge>
+                      </motion.span>
                     ))}
                   </div>
-                </div>
+                </motion.div>
+              </div>
 
-                <div className="mb-3">
-                  <strong style={{ color: theme === 'light' ? '#2D3748' : '#F7FAFC' }}>
-                    Key Features:
-                  </strong>
-                  <ul className="mt-2" style={{ color: theme === 'light' ? '#4A5568' : '#CBD5E0' }}>
-                    {selectedProject?.features.map((feature, i) => (
-                      <li key={i}>{feature}</li>
-                    ))}
-                  </ul>
-                </div>
+              {/* Features */}
+              <div className="col-md-6">
+                <motion.div
+                  initial={{ x: 20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.5 }}
+                >
+                  <h6 className="fw-semibold mb-3" style={{ 
+                    color: theme === 'light' ? '#667eea' : '#A0AEC0',
+                    fontSize: '1rem'
+                  }}>
+                    Key Features
+                  </h6>
+                  <div style={{
+                    background: theme === 'light' ? 'rgba(102, 126, 234, 0.03)' : 'rgba(255, 255, 255, 0.02)',
+                    borderRadius: '8px',
+                    padding: '1rem'
+                  }}>
+                    <ul className="mb-0" style={{ 
+                      color: theme === 'light' ? '#4A5568' : '#CBD5E0',
+                      fontSize: '0.9rem',
+                      lineHeight: '1.6',
+                      paddingLeft: '1.2rem'
+                    }}>
+                      {selectedProject?.features.map((feature, i) => (
+                        <motion.li
+                          key={i}
+                          initial={{ x: 10, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          transition={{ delay: 0.7 + i * 0.1 }}
+                        >
+                          {feature}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
 
-                <div className="d-flex gap-2">
-                  <Button 
-                    variant="primary" 
-                    href={selectedProject?.github} 
-                    target="_blank"
-                    style={{ 
-                      background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                      border: 'none',
-                      borderRadius: '20px',
-                      fontWeight: '500',
-                      padding: '10px 20px'
-                    }}
-                  >
-                    <FaGithub className="me-2" />
-                    View Code
-                  </Button>
-                  <Button 
-                    variant="outline-primary" 
-                    href={selectedProject?.liveDemo} 
-                    target="_blank"
-                    style={{ 
-                      borderColor: '#667eea',
-                      color: '#667eea',
-                      borderRadius: '20px',
-                      fontWeight: '500',
-                      padding: '10px 20px'
-                    }}
-                  >
-                    <FaExternalLinkAlt className="me-2" />
-                    Live Demo
-                  </Button>
-                </div>
-              </Modal.Body>
+        
+
+            {/* Action Buttons */}
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.9 }}
+              className="d-flex gap-3 mt-4 pt-3"
+              style={{ 
+                borderTop: `1px solid ${theme === 'light' ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.1)'}` 
+              }}
+            >
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => setShowProjectModal(false)}
+                className="btn flex-fill"
+                style={{
+                  background: 'transparent',
+                  border: `1px solid ${theme === 'light' ? '#667eea' : '#A0AEC0'}`,
+                  color: theme === 'light' ? '#667eea' : '#A0AEC0',
+                  fontWeight: '500'
+                }}
+              >
+                Close
+              </motion.button>
+              
+              {selectedProject?.liveDemo && selectedProject.liveDemo !== '#' && (
+                <motion.a
+                  href={selectedProject.liveDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="btn flex-fill text-white text-decoration-none"
+                  style={{
+                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    border: 'none',
+                    fontWeight: '500'
+                  }}
+                >
+                  View Live Demo
+                </motion.a>
+              )}
             </motion.div>
-          </Modal>
-        )}
-      </AnimatePresence>
+          </div>
+        </div>
+      </motion.div>
+    </Modal>
+  )}
+</AnimatePresence>
 
       {/* Contact Modal */}
       <Modal 
